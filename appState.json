@@ -1,0 +1,110 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "9791d17c-a2d5-411b-b827-336cfe64898f": {
+        "id": "9791d17c-a2d5-411b-b827-336cfe64898f",
+        "parent": null,
+        "name": "testhttpapi.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testhttpapi.js",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "testhttpapi"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigmonapithhp",
+            "config": {
+              "defaultRoute": false,
+              "method": "GET",
+              "route": "/"
+            }
+          },
+          {
+            "resourceName": "cweCloudwatch",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1603975657794
+      }
+    },
+    "openFiles": [
+      "9791d17c-a2d5-411b-b827-336cfe64898f"
+    ],
+    "currentFileId": "9791d17c-a2d5-411b-b827-336cfe64898f",
+    "resources": {
+      "httpApigmonapithhp": {
+        "name": "httpApigmonapithhp",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "monapithhp",
+          "stageName": "$default",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      },
+      "cweCloudwatch": {
+        "name": "cweCloudwatch",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:173594419464:rule/Cloudwatch",
+          "name": "Cloudwatch",
+          "eventBusName": "default"
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.4.1",
+    "projectName": "testhttpapi",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1603975801882
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testhttpapi",
+      "url": "https://github.com/fgaoudi/testhttpapi"
+    }
+  }
+}
